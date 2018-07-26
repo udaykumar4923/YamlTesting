@@ -7,25 +7,28 @@ import java.util.HashMap;
 import org.ho.yaml.Yaml;
 
 public class YamlReader {
-	HashMap<String,HashMap<String,HashMap<String,String>>> mainMap;
+	HashMap<String,Object> mainMap;
 	
 	@SuppressWarnings("unchecked")
 	public YamlReader() throws FileNotFoundException {
-		String filePath1 = "/home/qainfotech/eclipse-workspace/YamlTest/src/test/java/testData/locator.yml";
-		mainMap = (HashMap<String,HashMap<String,HashMap<String,String>>>)Yaml.load(new FileInputStream(filePath1));
+		String filePath1 = "/home/uday/Downloads/yaml1/YamlTesting/src/test/java/testData/locator.yml";
+		mainMap = (HashMap<String,Object>)Yaml.load(new FileInputStream(filePath1));
+	}
+	
+	public String getELement(String elementToken) {
+		String[] tokens = elementToken.split("\\.");
+		String lastToken = tokens[tokens.length - 1];
+		return getLastMap(elementToken,mainMap).get(lastToken).toString();
 	}
 	
 	
-	public String getMailId(String value) {
-		
-		return mainMap.get("credentials").get(value).get("name");
-		
-	}
-	
-	
-	public String getPassWord(String value) {
-		
-		return mainMap.get("credentials").get(value).get("password");
+	public HashMap<String,Object> getLastMap(String token,HashMap<String,Object> map) {
+	    if (token.contains(".")) {
+	        String[] tokens = token.split("\\.");
+	        token = token.replace(tokens[0] + ".", "");
+	        map = getLastMap(token, (HashMap<String, Object>) map.get(tokens[0]));
+	    }
+		return map;
 	}
 	
 }

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70" started-at="2018-07-26T12:48:00Z" finished-at="2018-07-26T12:48:00Z">
+  <suite name="Default suite" duration-ms="45" started-at="2018-07-26T18:05:08Z" finished-at="2018-07-26T18:05:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70" started-at="2018-07-26T12:48:00Z" finished-at="2018-07-26T12:48:00Z">
+    <test name="Default test" duration-ms="45" started-at="2018-07-26T18:05:08Z" finished-at="2018-07-26T18:05:08Z">
       <class name="com.qait.automation.YamlTest.YamlTesting">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.qait.automation.YamlTest.YamlTesting@6767c1fc]" name="beforeTest" is-config="true" duration-ms="56" started-at="2018-07-26T18:18:00Z" finished-at="2018-07-26T18:18:00Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.qait.automation.YamlTest.YamlTesting@6767c1fc]" name="beforeTest" is-config="true" duration-ms="25" started-at="2018-07-26T23:35:08Z" finished-at="2018-07-26T23:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="readvalues()[pri:0, instance:com.qait.automation.YamlTest.YamlTesting@6767c1fc]" name="readvalues" duration-ms="5" started-at="2018-07-26T18:18:00Z" finished-at="2018-07-26T18:18:00Z">
+        <test-method status="PASS" signature="readvalues()[pri:0, instance:com.qait.automation.YamlTest.YamlTesting@6767c1fc]" name="readvalues" duration-ms="6" started-at="2018-07-26T23:35:08Z" finished-at="2018-07-26T23:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readvalues -->
