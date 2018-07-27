@@ -20,7 +20,11 @@ public class YamlTesting {
 	
 	@Test
 	public void readvalues() {
-		System.out.println(yamlReader.getELement("credentials.h emailId1.name"));
+		System.out.println(yamlReader.getELement("credentials.h emailId2.name"));
+		System.out.println(yamlReader.getELement("hierarchy1"));
+		System.out.println(yamlReader.getELement("hierarchy2.value"));
+		System.out.println(yamlReader.getELement("hierarchy4.firstLevel.secondLevel.ThirdLevel.value"));
+		
 	}
 	
 }

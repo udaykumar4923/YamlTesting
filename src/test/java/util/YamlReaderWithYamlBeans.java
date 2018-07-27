@@ -22,3 +22,9 @@ public class YamlReaderWithYamlBeans {
 		return map.get(value).toString();
 	}
 }
+//if (token.contains(".")) {
+//String[] tokens = token.split("\\.");
+//token = token.replace(tokens[0] + ".", "");
+//map = getLastMap(token, (HashMap<String, Object>) map.get(tokens[0]));
+//}
+//return map;
